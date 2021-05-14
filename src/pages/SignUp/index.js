@@ -5,7 +5,7 @@ import { Text } from 'react-native';
 export default () => {
     return(
         <Container>
-            <Text>SighIn</Text>
+            <Text>SighUp</Text>
         </Container>
     )
 }
