@@ -1,4 +1,4 @@
-import AsyncStorage from '@react-native-community/async-storage';
+/* import AsyncStorage from '@react-native-community/async-storage';
 import { add } from 'react-native-reanimated';
 
 const BASE_API = 'https://localhost:3333';
@@ -17,7 +17,7 @@ export default {
         return json;
     },
     signIn: async (email, password) => {
-        const req = await fetch(`${BASE_API}/auth/login`, {
+        const req = await fetch(`${BASE_API}/sessions`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -29,7 +29,7 @@ export default {
         return json;
     },
     signUp: async (name, email, password) => {
-        const req = await fetch(`${BASE_API}/user`, {
+        const req = await fetch(`${BASE_API}/users`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -52,4 +52,30 @@ export default {
         return json;
     }
 
-};
+}; */
+
+import { create } from 'apisauce'
+
+const api = create({
+    baseURL: 'http://localhost:3333'
+})
+
+export default api;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
